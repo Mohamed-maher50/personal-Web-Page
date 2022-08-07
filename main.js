@@ -1,4 +1,6 @@
-AOS.init();
+AOS.init({
+  duration: 1200,
+});
 
 // const swiper = new Swiper(".swiper", {
 //   // Optional parameters
