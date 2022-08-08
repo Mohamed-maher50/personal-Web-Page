@@ -205,6 +205,12 @@ nav button{
 .py-100{
     padding: 100px 0px;
 }
+.py-10{
+    padding:10px 0px ;
+}
+.px-10{
+    padding: 0px 10px;
+}
 .upper{
     text-transform: uppercase;
 }
@@ -231,4 +237,11 @@ nav button{
 }
 .left-0{
     left: 0px;
+}
+.box-border{
+    box-sizing: border-box;
+}
+.set{
+    padding:0 ;
+    margin:0 ;
 }
