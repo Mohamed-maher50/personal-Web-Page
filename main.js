@@ -1,7 +1,9 @@
 AOS.init({
   duration: 1200,
 });
-
+window.onload = function () {
+  document.getElementById("layout").style.display = "none";
+};
 // const swiper = new Swiper(".swiper", {
 //   // Optional parameters
 //   direction: "vertical",
