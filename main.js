@@ -4,51 +4,47 @@ AOS.init({
 window.onload = function () {
   document.getElementById("layout").style.display = "none";
 };
-// const swiper = new Swiper(".swiper", {
-//   // Optional parameters
-//   direction: "vertical",
-//   loop: true,
-//   speed: 2000,
-//   spaceBetween: 100,
-//   allowSlideNext: true,
-//   allowTouchMove: true,
-//   // If we need pagination
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//     currentClass: "swiper-pagination-clickable",
-//     dynamicBullets: true,
 
-//     // bulletActiveClass: "swiper-pagination-bullet-active",
-//   },
-//   effect: "creative",
-//   creativeEffect: {
-//     next: {
-//       // will set `translateX(100%)` on next slides
-//       translate: ["100%", 0, 0],
-//     },
-//   },
-//   autoplay: {
-//     delay: 2000,
-//   },
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    type: "bullets",
+  },
+  // Default parameters
+  slidesPerView: 1,
+  spaceBetween: 10,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
 
-// Navigation arrows
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-
-// And if we need scrollbar
-//   scrollbar: {
-//     el: ".swiper-scrollbar",
-//   },
-// });
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        clifford: "#da373d",
-      },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 1,
+    },
+    // when window width is >= 640px
+    920: {
+      slidesPerView: 3,
+      spaceBetween: 40,
     },
   },
-};
+  effect: "coverflow",
+  coverflowEffect: {
+    rotate: 60,
+    slideShadows: false,
+  },
+});
