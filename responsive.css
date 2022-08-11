@@ -1,4 +1,10 @@
 @media only screen and (max-width: 600px) {
+    nav .container div{
+        display: block;
+        position: relative;
+    }  
+
+   
     .header .container{
         display: block
     }
@@ -47,13 +53,30 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-   
+@media only screen and (min-width: 768px) {
+    .events {
+        width: 32% !important;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+ 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
+@media only screen and (max-width: 768px) {
+    .events {
+        width: 100% !important;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+    
+    }
+    .faq .grid-container{
+        display: block;
+    }
+    .faq .grid-container >div{
+        margin: 20px 0px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
