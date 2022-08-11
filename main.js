@@ -48,3 +48,21 @@ const swiper = new Swiper(".swiper", {
     slideShadows: false,
   },
 });
+const navMenu = document.querySelector("nav .iconNav");
+const navUl = document.querySelector("nav .ul");
+navMenu.addEventListener("click", () => {
+  if (navUl.classList.contains("active")) {
+    navUl.classList.remove("active");
+  } else {
+    navUl.classList.add("active");
+  }
+});
+const dropIcon = document.querySelectorAll(".faq .box .dropMenu_icon");
+const box = document.querySelectorAll(".faq .box ");
+
+for (icon of dropIcon) {
+  icon.addEventListener("click", function () {
+    box.forEach((ele) => ele.classList.remove("active"));
+    this.parentElement.classList.add("active");
+  });
+}
