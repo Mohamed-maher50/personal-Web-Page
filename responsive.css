@@ -8,6 +8,7 @@
         border:2px solid #fff;
         color: #EF6D58;
         cursor: pointer;
+        display: block;
     }
     .events {
         width: 100% !important;
