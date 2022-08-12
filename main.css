@@ -265,6 +265,16 @@ nav button{
 .faq .box.active .dropMenu_icon{
     transform: rotate(-180deg);
 }
+/* images-box */
+.images-box{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.images-box .box img{
+    width: 100%;
+    height: 100%;
+}
+
 /* global class */
 .flex{
     display: flex;
