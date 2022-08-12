@@ -15,16 +15,39 @@
         grid-template: none / 1fr  1fr;
         place-items:unset;
     }
-    
+    nav .container{
+        display: block;
+    }
+    nav{
+        background-color: #28293E;
+        z-index: 10;
+    }
+    nav .ul{
+        height: 0px;
+        transition: .5s;
+    }
+    nav .ul, nav .ul ul{
+        display: block;
+        padding: 0;  
+       
+     }
+     nav .ul, nav .ul div:last-child{
+        display: block;
+     }
+     nav ul li{
+            padding: 15px 0px;
+
+    }
+
+        nav .ul.active{
+            height: 400px;
+        }
 }
 
 @media only screen and (max-width: 600px) {
-    nav .container div{
-        display: block;
-        position: relative;
-    }  
 
-   
+
+
     .header .container{
         display: block
     }
@@ -83,7 +106,7 @@
         width: 100%;
         text-align: center;
     }
-    .footer .grid-container >div, ul{
+    .footer .grid-container >div >ul{
         margin: auto;
     }
     .icon{

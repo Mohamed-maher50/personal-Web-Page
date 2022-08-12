@@ -1,6 +1,7 @@
 AOS.init({
   duration: 1200,
 });
+
 window.onload = function () {
   document.getElementById("layout").style.display = "none";
 };

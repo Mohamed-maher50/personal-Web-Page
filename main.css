@@ -15,7 +15,7 @@ body{
 .iconNav{
     position: absolute;
     right: 20px;
-    top: 13px;
+    top: 25px;
     padding: 10px 13px;
     border:2px solid #fff;
     color: #EF6D58;
@@ -55,32 +55,48 @@ body{
     font-weight: 400;
 }
 /* navbar */
-nav{
-    background-color: var(--dark-color);
-    position: absolute;
-    width: 100%;
-    padding: 10px 0px;
-}
 
+nav {
+    min-height: 80px;
+    padding-top: 20px;
+}
 .logo{
+    width: 15%;
+}
+.ul{
+    width:85%
+}
+.ul ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    box-sizing: border-box;
+    padding-left: 150px;
+
+    justify-content: space-around;
+}
+nav .container .ul div:last-child{
     width: 30%;
 }
-ul{
-    width: 50%;
-    color: #fff;
-    
-}
-li{
-    list-style: none;
+nav ul li{
+  
+position: relative;
     cursor: pointer;
 }
-nav button{
-    background-color: transparent;
-    color: #fff;
-   
+nav ul li::after{
+content: "";
+position: absolute;
+left: 0;
+bottom: 0;
 
+height: 2px;
+background-color: #EF6D58;
+width: 0%;
+transition: .3s ease-in;
 }
-
+nav ul li:hover::after{
+width: 100%;
+}
 /* header  */
 .header{
     padding: 90px 0px;
