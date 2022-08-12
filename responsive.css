@@ -1,5 +1,14 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+    .iconNav{
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        padding: 10px 13px;
+        border:2px solid #fff;
+        color: #EF6D58;
+        cursor: pointer;
+    }
     .events {
         width: 100% !important;
         box-sizing: border-box;

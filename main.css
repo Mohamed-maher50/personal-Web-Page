@@ -12,15 +12,7 @@ body{
     height: 100%;
     width: 100%;
 }
-.iconNav{
-    position: absolute;
-    right: 20px;
-    top: 25px;
-    padding: 10px 13px;
-    border:2px solid #fff;
-    color: #EF6D58;
-    cursor: pointer;
-}
+
 .layout .looding{
     border:2px solid #EF6D58;
     position: absolute;
